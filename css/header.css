@@ -1,6 +1,6 @@
 header{
    width: 100%;
-   height: 8%;
+   height: 13%;
    justify-content: space-around;
    align-content: center;
    align-items: center;
@@ -27,12 +27,53 @@ header{
     
 }
 
+
+
+/* MID SECTION DESIGN */
 .middlesection{
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: antiquewhite;
+}
+
+/* DROPDOWN LINKS */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mainbtn{
+    background-color: transparent;
+    border: none;
+}
+
+.mainbtn img{
+    width: 32%;
+    height: 32%;
+    margin-bottom: 4%;
+    align-items: center;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:aquamarine;
+    min-width: 150px;
+    margin-top:319px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    width: 100%;
+    background-color: black;
 }
 
 .middlesection a{
@@ -40,31 +81,28 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center;   
+    padding: 2% 0% 2% 0%; 
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    align-content: center;
+.link{
+    margin: 10% 0% 10% 0%;
+}
+
+.dropdown-content:hover{
+    margin-top: 319px;
+    
 }
   
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-  
+.dropdown-content:hover a{
+    display: block;
+} 
+
 .dropdown:hover .dropdown-content {
     display: block;
 } 
+
+/* MID SECTION END */
 
 .rightsection{
     width: 20%;
