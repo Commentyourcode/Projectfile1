@@ -4,7 +4,3 @@ var droplink2 = document.getElementsByClassName("link2")
 var droplink3 = document.getElementsByClassName("link3")
 var droplink4 = document.getElementsByClassName("link4")
 
-@keyframes rotateAnimation {
-	from {transform: rotateY(45deg);}
-	to {transform: rotateY(225deg);}
-}
