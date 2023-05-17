@@ -13,31 +13,47 @@
     <header>
         <div id="menubar">
             <div class="leftsection">
-                <img src="" id="logo">
+                <div id="rotatelogo">
+                    <img src="../img/empire-logo.png" class="logo">
+                </div>
             </div>
             <div class="middlesection">                  
                 <div class="dropdown">
                     <button class="mainbtn"><a href="#"></a><img src="../img/imperial_logo_traditional_name.png" alt=""></a></button>
                     <div class="dropdown-content"> 
-                        <a href="#" class="link">Units</a>
-                        <a href="#" class="link">Vehicles</a>
-                        <a href="#" class="link">Ranks</a>
-                        <a href="#" class="link">Planets</a>
+                        <a href="#" class="link1">uNiTS</a>
+                        <a href="#" class="link2">vEHiCLES</a>
+                        <a href="#" class="link3">RANKS</a>
+                        <a href="#" class="link4">PLANETS</a>
                     </div>
                   </div>
-                 <!-- <div class="dropbtn"><img src="/img/empire-logo.png" width="120px" height="auto" alt=""></button>
-                    <div class="dropcontent">
-                        <a href="#">Units</a><br>
-                        <a href="#">Vehicles</a><br>
-                        <a href="#">Ranks</a><br>
-                        <a href="#">Operational plan</a>
-                    </div>
-                </div> -->
             </div>
             <div class="rightsection">
-                <img src="" id="idk">
+                <div class="button1"></div>
+                <div class="button2"></div>
             </div>
         </div>
     </header>
 </body>
 </html>
+
+div {
+	perspective: 500px;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.square {
+	width: 200px;
+	height: 200px;
+	background: grey;
+	transform: rotateY(45deg);
+	animation: rotateAnimation 1s linear infinite;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+}
