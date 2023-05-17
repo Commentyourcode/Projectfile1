@@ -174,4 +174,5 @@ header{
 .button1:hover, .button2:hover{
     background: linear-gradient(to right, black, red, black);
     color: white;
+    text-align: center;
 }
