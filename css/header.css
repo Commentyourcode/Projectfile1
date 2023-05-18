@@ -30,7 +30,7 @@ header{
 
 /* Imperial logo rotation */
 #rotatelogo{
-    perspective: 110px;	
+    perspective: 120px;	
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -40,11 +40,12 @@ header{
 }
 
 .logo {
-	width: 200px;
-	height: 110px;
+	width: auto;
+	height: 45%;
 	transform: rotateY(50deg);
 	animation: rotateAnimation 1.9s linear infinite;
-    filter:drop-shadow(0 0 0.75rem rgb(255, 0, 0));
+    background-image: url(../img/sith-empire-white-logo.png);
+    background-size: cover;
 }
 
 @keyframes rotateAnimation {
@@ -56,7 +57,7 @@ header{
 
 /* MID SECTION DESIGN */
 .middlesection{
-    width: 35%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -81,11 +82,20 @@ header{
 
 /* Button .img attributes */
 .mainbtn img{
-    width: 40%;
-    height: 40%;
+    width: 25%;
+    height: 25%;
     align-items: center;
-    filter: drop-shadow(0 0 0.75rem rgb(255, 0, 0));
+    filter: drop-shadow(0 0 0.17rem rgb(102, 102, 102));
 }
+.mainbtn img:hover{
+    width: 25%;
+    height: 25%;
+    align-items: center;
+    filter: drop-shadow(0 0 0.50rem rgb(148, 1, 1));
+    background-image: url(../img/sith-empire-white-logo.png);
+    background-size: cover;
+}
+
 
 /* Dropdown content div */
 .dropdown-content {
@@ -96,7 +106,7 @@ header{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
-    font-size: 17pt;    
+    font-size: 14pt;    
 }
 
 /* Dropdown content link appearance change */
@@ -118,18 +128,24 @@ header{
 }
 
 /* Adjusts each link's margins */
-.link1, .link2, .link3, .link4{
-    margin: 10% 0% 5% 0%;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
+.link1, .link2, .link3, .link4, .link5{
+    margin: 10% 0% 5% 0%;   
+    background-image: linear-gradient(#0000008e,#ff0606,#0000008e);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .4s;
 }
 
-.link1:hover, .link2:hover, .link3:hover, .link4:hover{
+.link1:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover{
     margin: 10% 0% 5% 0%;
     color: white;
-    background: linear-gradient(to right,  black, red, black);
-    width: 450px;
-    transition: linear 0.5s;
+    background-size: 100% 100%;
+    width: 550px;
+    transition: linear 0.4s;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
 }
   
 .dropdown-content:hover .link1{
@@ -144,35 +160,51 @@ header{
 
 /* Right section adjustments */
 .rightsection{
-    width: 30%;
+    width: 27%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: 10%;
+    flex-wrap: wrap;
 }
 
 
 /* BUTTONS */
-.button1, .button2 {
+#btngroup{
+    width: 70%;
+    height: 30%;
     display: flex;
-    width: 90px;
-    height: 50px;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
     align-items: center;
-    position: relative;
-    color: red;
-    font-family: starjedi;
-    font-size: 16px;    
-    border: none;
-    background-color: black;
-    border-top:1px solid red;
-    border-bottom:1px solid red;
 }
 
+/* Button settings */
+.btnlink1, .btnlink2 {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: starjedi;
+    text-decoration: none;
+    font-size: 16px;    
+    background-image: linear-gradient(#00000048,#ff0606,#00000048);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.7s;
+    color: red;
+}
 
-.button1:hover, .button2:hover{
-    background: linear-gradient(to right, black, red, black);
+/* Hover for the button links on the right section */
+.btnlink1:hover, .btnlink2:hover{
     color: white;
-    text-align: center;
+    background-size: 100% 100%;
+    transition: linear 0.4s;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: 1px solid rgb(255, 0, 0);
+    border-bottom: 1px solid rgb(255, 0, 0);
 }
