@@ -1,0 +1,63 @@
+html,
+/* Default use:
+  @include min-(width,4,240);
+
+  use width calculation
+  @include min-(width,4,240,'calc(100% - 240px)');
+*/
+html,
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x:hidden;
+  perspective: 3px;
+  position: relative;
+  width: 100%;
+}
+
+section {
+  background-size: cover;
+  color: white;
+  background-color: var(--bg, --color-black);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.image {
+  background-position: center center;
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 200vh;
+  background-repeat: no-repeat;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+  height: 65vh;
+}
+section.text {
+  height: 50vh;
+}
+section.heading {
+  z-index: -1;
+  transform: translateY(-30vh) translateZ(1px) scale(1.5);
+}
+
+.footer {
+  position: relative;
+  display: block;
+  background-color: black;
+  height: 15vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer h3 {
+  font-weight: normal;
+  color: var(--color-blue);
+}
