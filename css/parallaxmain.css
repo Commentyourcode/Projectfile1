@@ -60,12 +60,15 @@
   #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
 }
 
-#hologram{
-  width: 50vh;
-  height: 20vh;
+
+.sith1{
+  width: 70vh;
+  height: 160vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-right: 50vh;
+  margin-right: 20vh;
+  margin-left: 10vh;
+  padding-top: 15vh;
 }
