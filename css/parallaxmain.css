@@ -31,15 +31,16 @@
 
 /* Section - Block */
 /**************************/
-#parallax-world-of-ugg .block {background: black; padding: 60px; width:500px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block {background: rgba(0, 0, 0, 0.425); padding: 60px; width:170vh; margin:0 auto; text-align:justify;}
 #parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
 #parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
 
 /* Section - Parallax */
 /**************************/
-#parallax-world-of-ugg .parallax-one {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/sith-den-wpp.png); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
-#parallax-world-of-ugg .parallax-two {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/sith-holocron2.webp); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
-#parallax-world-of-ugg .parallax-three {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/darth-talon-walking-wpp.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-one {padding-top: 100px; padding-bottom: 100px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/sith-empire-external-hall.webp); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/korriban-city.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/kaasoutskirts.webp); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-four {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/kaas-citadel.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
 
 /* Extras */
 /**************************/
@@ -54,21 +55,27 @@
   #parallax-world-of-ugg .block {padding: 30px; width:420px;}
   #parallax-world-of-ugg h2 {font-size:30px;}
   #parallax-world-of-ugg .block {padding: 30px;}
-  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three, #parallax-world-of-ugg .parallax-four {padding-top:100px; padding-bottom:100px;}
 }
 @media screen and (max-width: 479px) {
   #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
 }
 
-
-.sith1{
+/* parallax section 1 img settings */
+.banner{
   width: 70vh;
   height: 160vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-right: 20vh;
+  margin-right: 10vh;
   margin-left: 10vh;
   padding-top: 15vh;
+}
+
+.banner img{
+  width: auto;
+  height: 75vh;
+  margin: 0vh 15vh 15vh 0vh;
 }
