@@ -1,0 +1,231 @@
+*{
+    margin: 0%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#page{
+    width: 50%;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0.678);
+    display: flex;
+    border:1px solid red;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;;
+}
+
+#rotatelogo{
+    perspective: 50px;	
+    height: 2vh;   
+    background-color: black;
+    width: 50px;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+	width: 10vh;
+	height: 10vh;
+	transform: rotateY(50deg);
+	animation: rotateAnimation 1.9s linear infinite;
+    background-size: cover;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(5deg);}
+	to {transform: rotateY(359deg);}
+}
+
+h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    height: 5vh;
+    width: 100%;
+    margin-top: 5%;
+    font-size: 14pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    COLOR: red;
+}
+
+#logo{
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+    display: flex;;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#middlesection{
+    width: 95vh;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    border-radius: 5px;
+} 
+
+.form{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-left: 2%;
+    padding: 5% 0% 10% 0% ;
+    border-radius: 5px;
+}
+
+.formcontainer{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#picture{
+    width: 25vh;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:5%;
+}
+
+#picture img{
+    width: auto;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0% 0% 0% 7%;
+    filter: drop-shadow(0 0 0.35rem rgb(160, 11, 11));
+}
+
+#formt1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    color: red;
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #777777;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .formbutton{
+    align-items: center;
+    width:100%;
+    height: 20%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  #sendbtn {
+    display: flex;
+    width: 100px;
+    height: 5%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 16px;    
+    background: linear-gradient(#6405055d,red, white, red,#6405055d);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.7s;
+    color: red;
+    cursor: pointer;
+    padding: 3%;
+    margin-top: 5%;
+    border: none;
+    font-weight: bold;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+/* Hover for the button links on the right section */
+#sendbtn:hover{
+    color: black;
+    background-size: 100% 100%;
+    transition: linear 0.3s;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#sendbtn a{
+    text-decoration: none;
+    color: red;
+}
+
+#sendbtn a:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#lowerlinks{
+    height: 72%;
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.lowercontainer{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+}
+
+/* defines alignment and adjustments for both links in the div */
+.signupredirect{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+    width: 20vh;
+}
+
+/* Nothing but a bar that sets the limit of my sanity */
+.section{
+    margin: 0% 1% 0% 1%;
+    color: red;
+    height: 3vh;
+    margin-top: 1%;
+}
+
+/* mostly to define font and initial color (designer shit) */
+.signupredirect, a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+    font-weight: lighter;
+}

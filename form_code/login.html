@@ -1,0 +1,66 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Login</title> 
+        <link rel="stylesheet" href="../login.css">
+        <link rel="stylesheet" href="../general_signup.css">
+</head>    
+<body>
+    <!-- This is where the structure will be set -->
+    <!-- Header opening -->
+    <div id="page">
+        <header>
+            <!-- logo div to separate and do invidual adjustments (top left) -->
+            <div id="logo"> <img src="../img_src/yugioh_logo_nbg.png" alt=""> </div>
+            <!-- Here is where the main menu button is placed, in form of a picture (middle align)-->
+            <div id="leftsection"> <img src="../img_src/millenium_puzzle_png_nbg.png" alt=""> </div>
+            <!-- Container for the main links, such as Login and Register (dumb proof menu) on the top right -->
+            <div id="rightsection">
+                <!-- dividing in classes allows a better adjustment of the effects on the links -->
+                <div class="login"> <a href="login.html"> Login</a></div>
+                <div class="bar">|</div>
+                <div class="login"> <a href="signup.html"> Register </a></div>
+            </div>
+        </header>
+        <!-- Header closed -->
+        <!-- Major content placement -->
+        <div id="content">     
+            <!-- Contains and adjusts form box, heading, and redirect link -->
+            <div id="centerwindow">
+                <!-- Usually the welcome message that comes on top of the form box -->
+                <div id="title">
+                    <h1> WELCOME BACK!</h1>
+                    <p> PLEASE, COME IN!</p>
+                </div>
+                    <!-- This is where the form and redirect link will be placed -->
+                    <div id="formbox">
+                        <!-- Exclusive for form type -->
+                        <div id="form">
+                            <!-- Elements of the form input and labels -->
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="example@gmail.com"><br>
+                            <label for="password">Password</label>
+                            <input type="password" id="password"><br>
+                            <div id="formbutton">
+                                <button type="submit">Send</button>
+                            </div>                              
+                        </div>
+                        <!-- Registration page and password recovery links -->
+                        <div id="lowerlinks">
+                            <div class="signupredirect">
+                                <a href="signup.html"> Not registered yet?</a>
+                            </div>
+                            <div class="section">|</div>
+                            <div class="signupredirect">
+                                <a href="recovery.html"> Lost your password?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>   
+        </div>
+    </div>  
+</body>
+</html>
